@@ -198,6 +198,7 @@
             this.label1.Size = new System.Drawing.Size(142, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "Player : ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -208,9 +209,9 @@
             this.label2.ForeColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(182, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 37);
+            this.label2.Size = new System.Drawing.Size(278, 37);
             this.label2.TabIndex = 2;
-            this.label2.Text = "A";
+            this.label2.Text = "Primeiro Jogador";
             // 
             // label3
             // 
@@ -223,7 +224,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n" +
     "|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -247,7 +247,6 @@
             this.label5.Size = new System.Drawing.Size(871, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = resources.GetString("label5.Text");
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -259,7 +258,6 @@
             this.label6.Size = new System.Drawing.Size(871, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = resources.GetString("label6.Text");
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Form1
             // 
@@ -290,7 +288,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

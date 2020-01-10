@@ -13,7 +13,7 @@ namespace tictactoe
     public partial class Form1 : Form
     {
         int[,] arr = new int[3, 3];
-        bool x = true; //A
+        bool x = true;
         int t = 0;
         public static int status = 0;
         public Form1()
@@ -39,7 +39,7 @@ namespace tictactoe
                 arr[0, 0] = -1;
             }
 
-            changeimg(pictureBox1, label2);
+            mudarimg(pictureBox1, label2);
             if (t > 4)
             {
                 check();
@@ -61,7 +61,7 @@ namespace tictactoe
                 arr[0, 1] = -1;
             }
 
-            changeimg(pictureBox2, label2);
+            mudarimg(pictureBox2, label2);
             if (t > 4)
             {
                 check();
@@ -82,7 +82,7 @@ namespace tictactoe
                 arr[0, 2] = -1;
             }
 
-            changeimg(pictureBox3,label2);
+            mudarimg(pictureBox3,label2);
             if (t > 4)
             {
                 check();
@@ -103,7 +103,7 @@ namespace tictactoe
                 arr[1, 0] = -1;
             }
 
-            changeimg(pictureBox4, label2);
+            mudarimg(pictureBox4, label2);
             if (t > 4)
             {
                 check();
@@ -125,7 +125,7 @@ namespace tictactoe
             }
 
 
-            changeimg(pictureBox5, label2);
+            mudarimg(pictureBox5, label2);
 
             if (t > 4)
             {
@@ -149,7 +149,7 @@ namespace tictactoe
 
 
 
-            changeimg(pictureBox6, label2);
+            mudarimg(pictureBox6, label2);
             if (t > 4)
             {
                 check();
@@ -172,7 +172,7 @@ namespace tictactoe
 
 
 
-            changeimg(pictureBox7, label2);
+            mudarimg(pictureBox7, label2);
             if (t > 4)
             {
                 check();
@@ -193,7 +193,7 @@ namespace tictactoe
                 arr[2, 1] = -1;
             }
 
-            changeimg(pictureBox8, label2);
+            mudarimg(pictureBox8, label2);
             if (t > 4)
             {
                 check();
@@ -214,7 +214,7 @@ namespace tictactoe
                 arr[2, 2] = -1;
             }
 
-            changeimg(pictureBox9, label2);
+            mudarimg(pictureBox9, label2);
             if (t>4)
             {
                 check();     
@@ -226,23 +226,23 @@ namespace tictactoe
 
 
 
-        private void changeimg(PictureBox px,Label l)
+        private void mudarimg(PictureBox pb,Label l)
         {
             if (x==true)
             {
-                px.Image = Image.FromFile(@"..\..\Resources\x.png");
+                pb.Image = Image.FromFile(@"..\..\Resources\x.png");
                 x = false;
-                l.Text =gameform.name2 ;
+                l.Text = gameform.nome1;
 
             }
             else
             {
-                px.Image = Image.FromFile(@"..\..\Resources\certo.png");
+                pb.Image = Image.FromFile(@"..\..\Resources\certo.png");
                 x = true;
-                l.Text = gameform.name;
+                l.Text = gameform.nome2;
 
             }
-            px.Enabled = false;
+            pb.Enabled = false;
 
         }
 
@@ -281,7 +281,7 @@ namespace tictactoe
 
             if (d1==3 ||  d2==3)
             {
-               //  MessageBox.Show("Player A WON........ ");
+                //  MessageBox.Show("O jogador A Ganhou........ ");
                 status = 1;
                 this.Hide();
                 Form2 ob = new Form2();
@@ -292,7 +292,7 @@ namespace tictactoe
             }
             else if (d1 == -3 || d2 == -3)
             {
-              //  MessageBox.Show("Player B WON........ ");
+                //  MessageBox.Show("O jogador B Ganhou........ ");
                 status = 2;
                 this.Hide();
                 Form2 ob = new Form2();
@@ -307,7 +307,7 @@ namespace tictactoe
                 {
                     if (row[i]==3 || col[i]==3)
                     {
-                        // MessageBox.Show("Player A WON........ ");
+                        // MessageBox.Show("O jogador A Ganhou........ ");
                         status = 1;
                         this.Hide();
                         Form2 ob = new Form2();
@@ -316,7 +316,7 @@ namespace tictactoe
                     }
                     else if (row[i] == -3 || col[i] == -3)
                     {
-                       // MessageBox.Show("Player B WON........ ");
+                       // MessageBox.Show("O jogador B Ganhou........ ");
                         status = 2;
                         this.Hide();
                         Form2 ob = new Form2();
@@ -338,22 +338,7 @@ namespace tictactoe
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

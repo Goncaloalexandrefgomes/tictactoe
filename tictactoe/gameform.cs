@@ -12,7 +12,7 @@ namespace tictactoe
 {
     public partial class gameform : Form
     {
-        public static string name, name2;
+        public static string nome1, nome2;
         public gameform()
         {
             InitializeComponent();
@@ -22,8 +22,8 @@ namespace tictactoe
         {
             if (textBox1.Text != " " && textBox2.Text != " ")
             {
-                name = textBox1.Text;
-                name2 = textBox2.Text;
+                nome1 = textBox1.Text;
+                nome2 = textBox2.Text;
                 this.Hide();
                 Form1 ob = new Form1();
                 ob.Show();

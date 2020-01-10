@@ -72,6 +72,7 @@
             this.label1.Size = new System.Drawing.Size(261, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "Player A won!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form2
             // 

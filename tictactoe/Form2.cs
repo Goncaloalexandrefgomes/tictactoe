@@ -33,16 +33,21 @@ namespace tictactoe
         {
             if (Form1.status==0)
             {
-                label1.Text = "GAME DRAW......";
+                label1.Text = "Jogo Empatado!";
             }
             else if (Form1.status==1)
             {
-                label1.Text = "Player " + gameform.name + " won";
+                label1.Text = "O Jogador " + gameform.nome2 + " ganhou";
             }
             else
             {
-                label1.Text = "Player " + gameform.name2 + " won";
+                label1.Text = "O Jogador " + gameform.nome1 + " ganhou";
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
