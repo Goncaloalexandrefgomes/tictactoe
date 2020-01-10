@@ -20,8 +20,8 @@ namespace tictactoe
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 ob = new Form1();
-            ob.Show();
+            Form1 jogo = new Form1();
+            jogo.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,11 +37,11 @@ namespace tictactoe
             }
             else if (Form1.status==1)
             {
-                label1.Text = "O Jogador " + gameform.nome2 + " ganhou";
+                label1.Text = "O Jogador " + gameform.nome1 + " ganhou";
             }
             else
             {
-                label1.Text = "O Jogador " + gameform.nome1 + " ganhou";
+                label1.Text = "O Jogador " + gameform.nome2 + " ganhou";
             }
         }
 
