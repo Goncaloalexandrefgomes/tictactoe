@@ -41,7 +41,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(267, 289);
+            this.button2.Location = new System.Drawing.Point(221, 171);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 31);
             this.button2.TabIndex = 8;
@@ -53,11 +53,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Mistral", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Firebrick;
-            this.label2.Location = new System.Drawing.Point(84, 196);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(38, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 34);
+            this.label2.Size = new System.Drawing.Size(130, 33);
             this.label2.TabIndex = 6;
             this.label2.Text = "Player 1";
             // 
@@ -65,24 +65,24 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Mistral", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(84, 242);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 34);
+            this.label1.Size = new System.Drawing.Size(130, 33);
             this.label1.TabIndex = 7;
             this.label1.Text = "Player 2";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(191, 210);
+            this.textBox2.Location = new System.Drawing.Point(174, 91);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 20);
             this.textBox2.TabIndex = 4;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 253);
+            this.textBox1.Location = new System.Drawing.Point(174, 137);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(272, 20);
             this.textBox1.TabIndex = 5;
@@ -91,9 +91,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::tictactoe.Properties.Resources._438056_blood_skull_black_red_748x421;
+            this.BackgroundImage = global::tictactoe.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(757, 332);
+            this.ClientSize = new System.Drawing.Size(528, 228);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

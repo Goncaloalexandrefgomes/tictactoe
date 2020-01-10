@@ -230,14 +230,14 @@ namespace tictactoe
         {
             if (x==true)
             {
-                px.Image = Image.FromFile(@"..\..\Resources\cross.png");
+                px.Image = Image.FromFile(@"..\..\Resources\x.png");
                 x = false;
                 l.Text =gameform.name2 ;
 
             }
             else
             {
-                px.Image = Image.FromFile(@"..\..\Resources\Green_tick.png");
+                px.Image = Image.FromFile(@"..\..\Resources\certo.png");
                 x = true;
                 l.Text = gameform.name;
 
@@ -335,6 +335,26 @@ namespace tictactoe
                 ob.Show();
                 
             }
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
