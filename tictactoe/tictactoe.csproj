@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tictac.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -108,6 +111,7 @@
     <Content Include="Resources\xr.png" />
     <Content Include="Resources\xrr.png" />
     <Content Include="Resources\xrrr.png" />
+    <Content Include="tictac.ico" />
     <None Include="Resources\ponto.jpg" />
     <None Include="Resources\6434697-blood-wallpaper.jpg" />
     <None Include="Resources\438056-blood-skull-black-red-748x421.jpg" />

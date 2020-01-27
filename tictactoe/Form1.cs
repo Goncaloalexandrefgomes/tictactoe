@@ -22,7 +22,6 @@ namespace tictactoe
             InitializeComponent();
         }
 
-        private jogo J = new jogo();
 
         private void button1_Click(object sender, EventArgs e)
         {

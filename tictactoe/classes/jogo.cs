@@ -8,11 +8,5 @@ namespace tictactoe.classes
 {
     class jogo
     {
-
-        int[,] arr = new int[3, 3];
-        bool x = true;
-        int q = 0;
-        public static int status = 0;
-
     }
 }
