@@ -33,6 +33,7 @@ namespace tictactoe
         {
             if (Form1.status==0)
             {
+
                 label1.Text = "Jogo Empatado!";
             }
             else if (Form1.status==1)

@@ -16,10 +16,13 @@ namespace tictactoe
         bool x = true;
         int q = 0;
         public static int status = 0;
+
         public Form1()
         {
             InitializeComponent();
         }
+
+        private jogo J = new jogo();
 
         private void button1_Click(object sender, EventArgs e)
         {
