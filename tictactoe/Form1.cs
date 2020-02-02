@@ -41,7 +41,7 @@ namespace tictactoe
                 arr[0, 0] = -1;
             }
 
-            mudarimg(pictureBox1, label2);
+            mudarimg(pictureBox1);
             if (q > 4)
             {
                 verificar();
@@ -63,7 +63,7 @@ namespace tictactoe
                 arr[0, 1] = -1;
             }
 
-            mudarimg(pictureBox2, label2);
+            mudarimg(pictureBox2);
             if (q > 4)
             {
                 verificar();
@@ -84,7 +84,7 @@ namespace tictactoe
                 arr[0, 2] = -1;
             }
 
-            mudarimg(pictureBox3,label2);
+            mudarimg(pictureBox3);
             if (q > 4)
             {
                 verificar();
@@ -105,7 +105,7 @@ namespace tictactoe
                 arr[1, 0] = -1;
             }
 
-            mudarimg(pictureBox4, label2);
+            mudarimg(pictureBox4);
             if (q > 4)
             {
                 verificar();
@@ -127,7 +127,7 @@ namespace tictactoe
             }
 
 
-            mudarimg(pictureBox5, label2);
+            mudarimg(pictureBox5);
 
             if (q > 4)
             {
@@ -151,7 +151,7 @@ namespace tictactoe
 
 
 
-            mudarimg(pictureBox6, label2);
+            mudarimg(pictureBox6);
             if (q > 4)
             {
                 verificar();
@@ -174,7 +174,7 @@ namespace tictactoe
 
 
 
-            mudarimg(pictureBox7, label2);
+            mudarimg(pictureBox7);
             if (q > 4)
             {
                 verificar();
@@ -195,7 +195,7 @@ namespace tictactoe
                 arr[2, 1] = -1;
             }
 
-            mudarimg(pictureBox8, label2);
+            mudarimg(pictureBox8);
             if (q > 4)
             {
                 verificar();
@@ -216,7 +216,7 @@ namespace tictactoe
                 arr[2, 2] = -1;
             }
 
-            mudarimg(pictureBox9, label2);
+            mudarimg(pictureBox9);
             if (q > 4)
             {
                 verificar();     
@@ -228,20 +228,18 @@ namespace tictactoe
 
 
 
-        private void mudarimg(PictureBox pb,Label l)
+        private void mudarimg(PictureBox pb)
         {
             if (x==true)
             {
                 pb.Image = Image.FromFile(@"..\..\Resources\x.png");
                 x = false;
-                l.Text = gameform.nome2;
 
             }
             else
             {
                 pb.Image = Image.FromFile(@"..\..\Resources\certo.png");
                 x = true;
-                l.Text = gameform.nome1;
 
             }
             pb.Enabled = false;
@@ -329,8 +327,8 @@ namespace tictactoe
             if (q == 9)
             {
                 this.Hide();
-                Form2 ganhou = new Form2();
-                ganhou.Show();
+                Form2 fim = new Form2();
+                fim.Show();
                 
             }
 

@@ -57,9 +57,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(38, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 33);
+            this.label2.Size = new System.Drawing.Size(158, 33);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Player 1";
+            this.label2.Text = "Username";
             // 
             // label1
             // 
@@ -69,24 +69,23 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(38, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 33);
+            this.label1.Size = new System.Drawing.Size(151, 33);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Player 2";
+            this.label1.Text = "Password";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(174, 137);
+            this.textBox2.Location = new System.Drawing.Point(195, 137);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 20);
             this.textBox2.TabIndex = 4;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(174, 91);
+            this.textBox1.Location = new System.Drawing.Point(195, 91);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(272, 20);
             this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // gameform
             // 

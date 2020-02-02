@@ -38,11 +38,11 @@ namespace tictactoe
             }
             else if (Form1.status==1)
             {
-                label1.Text = "O Jogador " + gameform.nome1 + " ganhou";
+                label1.Text = "O Jogador " + "X" + " ganhou";
             }
             else
             {
-                label1.Text = "O Jogador " + gameform.nome2 + " ganhou";
+                label1.Text = "O Jogador " + "Y" + " ganhou";
             }
         }
 
