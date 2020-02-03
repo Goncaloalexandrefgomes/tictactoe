@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace tictactoe
 {
@@ -23,6 +24,8 @@ namespace tictactoe
             }
             else
             {
+                MessageBox.Show("Falha no login", "Verifique a sua palavra-passe e o seu username");
+                Application.Restart();
             }
         }
     }
