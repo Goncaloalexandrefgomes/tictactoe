@@ -102,6 +102,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Help - Atalho.lnk" />
     <None Include="Resources\Sword-Shield-PNG-Image.png" />
   </ItemGroup>
   <ItemGroup>
