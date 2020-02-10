@@ -341,7 +341,7 @@ namespace tictactoe
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "C:\\Users\\goncalogomes\\Desktop\\aksdnadka (1)\\aksdnadka\\Help.chm");
+            Help.ShowHelp(this, Application.StartupPath + "\\Resources\\Help.chm");
         }
     }
 }

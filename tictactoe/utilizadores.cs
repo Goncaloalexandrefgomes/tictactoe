@@ -9,14 +9,14 @@ namespace tictactoe
     class utilizadores
     {
         public bool login = false;
-        public string user1 = "goncalogomes";
+        public string user1 = "gg";
         public string pass1 = "gg";
 
         public string analisa
         {
             set
             {
-                user1 = "goncalogomes";
+                user1 = "gg";
                 pass1 = "gg";
             }
         }

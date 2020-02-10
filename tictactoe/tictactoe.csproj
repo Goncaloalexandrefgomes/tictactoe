@@ -103,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Help - Atalho.lnk" />
+    <None Include="Resources\Help.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\Sword-Shield-PNG-Image.png" />
   </ItemGroup>
   <ItemGroup>
