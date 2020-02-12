@@ -22,7 +22,6 @@ namespace tictactoe
             InitializeComponent();
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -46,8 +45,6 @@ namespace tictactoe
             {
                 verificar();
             }
-            
-
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -67,8 +64,7 @@ namespace tictactoe
             if (q > 4)
             {
                 verificar();
-            }
-            
+            }          
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -132,8 +128,7 @@ namespace tictactoe
             if (q > 4)
             {
                 verificar();
-            }
-            
+            }        
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -178,8 +173,7 @@ namespace tictactoe
             if (q > 4)
             {
                 verificar();
-            }
-            
+            }          
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
@@ -199,8 +193,7 @@ namespace tictactoe
             if (q > 4)
             {
                 verificar();
-            }
-            
+            }           
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -220,13 +213,8 @@ namespace tictactoe
             if (q > 4)
             {
                 verificar();     
-            }
-            
-           
+            }          
         }
-
-
-
 
         private void mudarimg(PictureBox pb)
         {
@@ -234,19 +222,14 @@ namespace tictactoe
             {
                 pb.Image = Image.FromFile(@"..\..\Resources\x.png");
                 x = false;
-
             }
             else
             {
                 pb.Image = Image.FromFile(@"..\..\Resources\certo.png");
                 x = true;
-
             }
             pb.Enabled = false;
-
         }
-
-
 
         private void verificar()
         {
@@ -271,9 +254,7 @@ namespace tictactoe
                     {
                         d2 = d2 + arr[i, j];
                     }
-
-                }
-            
+                }   
             } 
             if (d1==3 ||  d2==3)
             {
@@ -284,7 +265,6 @@ namespace tictactoe
                 ganhou.Show();
 
                 return;
-
             }
             else if (d1 == -3 || d2 == -3)
             {
@@ -294,11 +274,9 @@ namespace tictactoe
                 Form2 ganhou = new Form2();
                 ganhou.Show();
                 return;
-
             }
             else
             {
-
                 for (int i = 0; i < 3; i++)
                 {
                     if (row[i]==3 || col[i]==3)
@@ -320,10 +298,7 @@ namespace tictactoe
                         return; 
                     }
                 }
-
-
             }
-
             if (q == 9)
             {
                 this.Hide();
@@ -331,11 +306,6 @@ namespace tictactoe
                 fim.Show();
                 
             }
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
 

@@ -42,7 +42,7 @@ namespace tictactoe
             }
             else
             {
-                label1.Text = "O Jogador " + "Y" + " ganhou";
+                label1.Text = "O Jogador " + "√" + " ganhou";
             }
         }
 
