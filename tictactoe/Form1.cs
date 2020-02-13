@@ -27,193 +27,69 @@ namespace tictactoe
             Application.Exit();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void aux(object sender, int v1, int v2)
         {
             q++;
 
-            if (x==true)
+            if (x == true)
             {
-                arr[0, 0] = 1;
+                arr[v1, v2] = 1;
             }
             else
             {
-                arr[0, 0] = -1;
+                arr[v1, v2] = -1;
             }
 
-            mudarimg(pictureBox1);
+            mudarimg((PictureBox)sender);
             if (q > 4)
             {
                 verificar();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            aux(sender, 0, 0);
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            q++;
-
-            if (x == true)
-            {
-                arr[0, 1] = 1;
-            }
-            else
-            {
-                arr[0, 1] = -1;
-            }
-
-            mudarimg(pictureBox2);
-            if (q > 4)
-            {
-                verificar();
-            }          
+            aux(sender, 0, 1);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            q++;
-
-            if (x == true)
-            {
-                arr[0, 2] = 1;
-            }
-            else
-            {
-                arr[0, 2] = -1;
-            }
-
-            mudarimg(pictureBox3);
-            if (q > 4)
-            {
-                verificar();
-            }
-            
+            aux(sender, 0, 2);
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            q++;
-
-            if (x == true)
-            {
-                arr[1, 0] = 1;
-            }
-            else
-            {
-                arr[1, 0] = -1;
-            }
-
-            mudarimg(pictureBox4);
-            if (q > 4)
-            {
-                verificar();
-            }
-            
+            aux(sender, 1, 0);
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            q++;
-
-            if (x == true)
-            {
-                arr[1, 1] = 1;
-            }
-            else
-            {
-                arr[1, 1] = -1;
-            }
-
-
-            mudarimg(pictureBox5);
-
-            if (q > 4)
-            {
-                verificar();
-            }        
+            aux(sender, 1, 1);
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            q++;
-
-            if (x == true)
-            {
-                arr[1, 2] = 1;
-            }
-            else
-            {
-                arr[1, 2] = -1;
-            }
-
-
-
-            mudarimg(pictureBox6);
-            if (q > 4)
-            {
-                verificar();
-            }
-            
+            aux(sender, 1, 2);
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            q++;
-
-            if (x == true)
-            {
-                arr[2, 0] = 1;
-            }
-            else
-            {
-                arr[2, 0] = -1;
-            }
-
-
-
-            mudarimg(pictureBox7);
-            if (q > 4)
-            {
-                verificar();
-            }          
+            aux(sender, 2, 0);
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            q++;
-
-            if (x == true)
-            {
-                arr[2, 1] = 1;
-            }
-            else
-            {
-                arr[2, 1] = -1;
-            }
-
-            mudarimg(pictureBox8);
-            if (q > 4)
-            {
-                verificar();
-            }           
+            aux(sender, 2, 1);
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            q++;
-
-            if (x == true)
-            {
-                arr[2, 2] = 1;
-            }
-            else
-            {
-                arr[2, 2] = -1;
-            }
-
-            mudarimg(pictureBox9);
-            if (q > 4)
-            {
-                verificar();     
-            }          
+            aux(sender, 2, 2);
         }
 
         private void mudarimg(PictureBox pb)
@@ -306,7 +182,6 @@ namespace tictactoe
                 fim.Show();
                 
             }
-
         }
 
         private void Button2_Click(object sender, EventArgs e)
