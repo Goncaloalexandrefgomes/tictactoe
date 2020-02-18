@@ -27,6 +27,7 @@ namespace tictactoe
             Application.Exit();
         }
 
+        // v1 = linha v2 = coluna
         private void aux(object sender, int v1, int v2)
         {
             q++;
@@ -177,6 +178,7 @@ namespace tictactoe
             }
             if (q == 9)
             {
+                status = 0;
                 this.Hide();
                 Form2 fim = new Form2();
                 fim.Show();
